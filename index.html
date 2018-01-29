@@ -1,0 +1,39 @@
+<html>  
+<head>
+
+    <title>
+        .:Welcome to Ubuntu Commands for various installions:.
+    </title>
+
+</head>
+<body>
+
+    <h1>Ubuntu  Commands for Installions</h1>
+
+    <h2>Installing Node JS for Angular JS.</h2>
+    <p>We need to have CURL & python software package in our system for installing Node.</p>
+    
+    <ul>
+        <li> $ sudo apt-get install curl.</li>
+        <li> $ sudo apt-get install python-software-properties.</li>
+    </ul>   
+    
+    <p>Add Node JS PPA & Install it.</p>
+    <ul>
+        <li>$ curl -sL https://deb.nodesource.com/setup_9.x | sudo -E bash -</li>
+        <li>$ sudo apt-get install nodejs</li>
+        <li>$ node -v </li>
+        <li>$ npm -v</li>
+    </ul>
+
+    <h2>Installing Angular CLI for creating Angular 2 App.</h2>
+    <ul>
+        <li>$ npm install -g angular-cli</li>
+        <li>$ ng new myfirstangproject</li>
+        <li>$ cd mynewfirstangproject</li> <!-- Go to your project -->
+        <li>$ ng serve</li> <!-- Command for building & running angular app-->        
+    </ul>
+    <p>After this you need to go to your browser and open http://localhost:4200/.</p>
+</body>
+
+</html>
