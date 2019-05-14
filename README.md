@@ -21,7 +21,8 @@ $ sudo apt-get install apache2
 
 $ sudo apt-get install php libapache2-mod-php
 
-# Create a file with name of info and save it. Then open it using localhost/info.php. You can check php version there
+**Note**:Create a file with name of info and save it. Then open it using localhost/info.php. You can check php version there
+
 $ sudo nano /var/www/html/info.php
 
 # Restart apache server
@@ -35,7 +36,7 @@ $ sudo mysql -u root -p
 
 # Installing Node JS for Angular JS
 
-# We need to have CURL & python software package in our system for installing Node.
+**We need to have CURL & python software package in our system for installing Node.**
     
 $ sudo apt-get install curl
 
@@ -62,4 +63,4 @@ $ cd mynewfirstangproject
 
 $ ng serve         
 
- # After this you need to go to your browser and open http://localhost:4200/.</p>
+**After this you need to go to your browser and open http://localhost:4200/.**
