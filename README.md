@@ -13,7 +13,7 @@ $ git --version
 
 $ sudo chmod -R o+rw /var/www
 
-# Command for installing apache
+# Command for Installing Apache Server
 
 $ sudo apt-get install apache2
 
@@ -21,17 +21,19 @@ $ sudo apt-get install apache2
 
 $ sudo apt-get install php libapache2-mod-php
 
-**Note**:Create a file with name of info and save it. Then open it using localhost/info.php. You can check php version there
+**Create a file with name of info and save it. Then open it using localhost/info.php. You can check php version there**
 
 $ sudo nano /var/www/html/info.php
 
-# Restart apache server
+**Restart apache server**
+
 $ sudo systemctl restart apache2
 
 # Install MySQL Server on Ubuntu 
 $ sudo apt-get install mysql-server
 
-# Check MySql on Terminal
+**Check MySql on Terminal**
+
 $ sudo mysql -u root -p
 
 # Installing Node JS for Angular JS
