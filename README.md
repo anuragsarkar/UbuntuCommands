@@ -36,6 +36,22 @@ $ sudo apt-get install mysql-server
 
 $ sudo mysql -u root -p
 
+
+# Install PHP Strom any version download the tar.gz file or download using command link.
+$ wget https://download-cf.jetbrains.com/webide/PhpStorm-2016.1.2.tar.gz
+
+**Goto Download folder and run to extract it**
+
+$ tar xvf PhpStorm-2016.1.2.tar.gz
+
+**Move extracted folder opt directory**
+
+$ sudo mv PhpStorm-145.1616.3/ /opt/phpstorm/
+
+**Create symlink**
+
+$ sudo ln -s /opt/phpstorm/bin/phpstorm.sh /usr/local/bin/phpstorm
+
 # Installing Node JS for Angular JS
 
 **We need to have CURL & python software package in our system for installing Node.**
