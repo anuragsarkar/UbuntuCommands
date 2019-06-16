@@ -88,9 +88,10 @@ $ ng serve
 **run the command sudo chmod -R a+rwx "/path/to/folder" 
 
 # Fix Error 
-# Warning in ./libraries/sql.lib.php#601
-# count(): Parameter must be an array or an object that implements Countable
-# Backtrace
+
+**Warning in ./libraries/sql.lib.php#601
+**count(): Parameter must be an array or an object that implements Countable
+**Backtrace
 
 # Solution
 
