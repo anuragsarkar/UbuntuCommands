@@ -87,7 +87,7 @@ $ ng serve
 
 **run the command sudo chmod -R a+rwx "/path/to/folder" 
 
-# Fix Error 
+# Fix Warning in ./libraries/sql.lib.php#601 Error for phpmyadmin in ubunu 18.04 and PHP 7.2
 
 **Warning in ./libraries/sql.lib.php#601
 **count(): Parameter must be an array or an object that implements Countable
