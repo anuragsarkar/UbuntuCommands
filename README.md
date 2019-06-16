@@ -82,3 +82,34 @@ $ cd mynewfirstangproject
 $ ng serve         
 
 **After this you need to go to your browser and open http://localhost:4200/.**
+
+# Change Permission in Ubuntu
+
+**run the command sudo chmod -R a+rwx "/path/to/folder" 
+
+# Fix Error 
+# Warning in ./libraries/sql.lib.php#601
+# count(): Parameter must be an array or an object that implements Countable
+# Backtrace
+
+# Solution
+
+**Go to sudo nano /usr/share/phpmyadmin/libraries/sql.lib.php file
+
+**And replace function PMA_isRememberSortingOrder() code with below code
+
+**Refer to [this link](https://stackoverflow.com/questions/48001569/phpmyadmin-count-parameter-must-be-an-array-or-an-object-that-implements-co)
+
+`function PMA_isRememberSortingOrder($analyzed_sql_results)
+{
+    return $GLOBALS['cfg']['RememberSorting']
+        && ! ($analyzed_sql_results['is_count']
+            || $analyzed_sql_results['is_export']
+            || $analyzed_sql_results['is_func']
+            || $analyzed_sql_results['is_analyse'])
+        && $analyzed_sql_results['select_from']
+        && ((empty($analyzed_sql_results['select_expr']))
+            || (count($analyzed_sql_results['select_expr']) == 1)
+            && ($analyzed_sql_results['select_expr'][0] == '*'))
+               && count($analyzed_sql_results['select_tables']) == 1;
+}`
