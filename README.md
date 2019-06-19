@@ -17,22 +17,28 @@ $ sudo chmod -R o+rw /var/www
 
 $ sudo apt-get install apache2
 
-# Installing PHP 5.6 & 7.2 for Ubuntu 
+# Installing PHP 5.6 for Ubuntu 
 
 $ sudo apt-get install python-software-properties
+
 $ sudo add-apt-repository ppa:ondrej/php
+
 $ sudo apt-get update
+
 $ sudo apt-get install -y php5.6
 
 # Install PHP
 
 $ sudo apt-get install php libapache2-mod-php
 
-# Install PHP 7.2
+# Install PHP 7.2 for Ubuntu
 
 $ sudo apt-get install python-software-properties
+
 $ sudo add-apt-repository ppa:ondrej/php
+
 $ sudo apt-get update
+
 $ sudo apt-get install -y php7.2
 
 **Check using php -v command
@@ -40,6 +46,28 @@ $ sudo apt-get install -y php7.2
 **Create a file with name of info and save it. Then open it using localhost/info.php. You can check php version there**
 
 $ sudo nano /var/www/html/info.php
+
+# Switch Between PHP Version’s
+
+**Switch PHP 7.2 to 5.6
+
+$ sudo update-alternatives --set php /usr/bin/php5.6
+
+$ sudo update-alternatives --set phpize /usr/bin/phpize5.6
+
+$ sudo update-alternatives --set php-config /usr/bin/php-config5.6
+
+**Switch PHP 5.6 to 7.2
+
+$ sudo update-alternatives --set php /usr/bin/php7.2
+
+$ sudo update-alternatives --set phpize /usr/bin/phpize7.2
+
+$ sudo update-alternatives --set php-config /usr/bin/php-config7.2
+
+# Install PHP Myadmin
+
+$ sudo apt-get install phpmyadmin php-mbstring php-gettext
 
 **Restart apache server**
 
