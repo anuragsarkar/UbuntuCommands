@@ -17,9 +17,25 @@ $ sudo chmod -R o+rw /var/www
 
 $ sudo apt-get install apache2
 
-# Installing PHP for Ubuntu 18.04
+# Installing PHP 5.6 & 7.2 for Ubuntu 
+
+$ sudo apt-get install python-software-properties
+$ sudo add-apt-repository ppa:ondrej/php
+$ sudo apt-get update
+$ sudo apt-get install -y php5.6
+
+# Install PHP
 
 $ sudo apt-get install php libapache2-mod-php
+
+# Install PHP 7.2
+
+$ sudo apt-get install python-software-properties
+$ sudo add-apt-repository ppa:ondrej/php
+$ sudo apt-get update
+$ sudo apt-get install -y php7.2
+
+**Check using php -v command
 
 **Create a file with name of info and save it. Then open it using localhost/info.php. You can check php version there**
 
@@ -30,6 +46,7 @@ $ sudo nano /var/www/html/info.php
 $ sudo systemctl restart apache2
 
 # Install MySQL Server on Ubuntu 
+
 $ sudo apt-get install mysql-server
 
 **Check MySql on Terminal**
