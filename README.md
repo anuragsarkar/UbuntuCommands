@@ -19,6 +19,8 @@ $ sudo apt-get install apache2
 
 # Installing PHP 5.6 for Ubuntu [Refer this link](https://medium.com/@lazycoding/installing-apache-2-php-5-6-mysql-on-ubuntu-14-04-eb3887ceeee1)
 
+# Option 1
+
 $ sudo apt-get install python-software-properties
 
 $ sudo add-apt-repository ppa:ondrej/php
@@ -27,11 +29,13 @@ $ sudo apt-get update
 
 $ sudo apt-get install -y php5.6
 
+# Option 2
+
 $ sudo apt-get install -y php5.6 php5.6-mcrypt php5.6-mbstring php5.6-curl php5.6-cli php5.6-mysql php5.6-gd php5.6-intl php5.6-xsl php5.6-zip libapache2-mod-php5.6
 
 This will install PHP 5.6 and some common packages such as cURL (php5.6-curl) and GD (lib5.6-gd), as well as enable PHP 5.6 in Apache 2.4 (libapache2-mod-php5.6).
 
-# Install PHP
+# Install PHP (This will install the latest stable version)
 
 $ sudo apt-get install php libapache2-mod-php
 
