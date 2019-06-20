@@ -73,6 +73,10 @@ $ sudo update-alternatives --set php-config /usr/bin/php-config7.2
 
 $ sudo apt-get install phpmyadmin php-mbstring php-gettext
 
+# Error:- mysql missing in phpmyadmin
+
+Un-Comment this (extension=php_mysqli.dll) line in php.ini file 
+
 **Restart apache server**
 
 $ sudo systemctl restart apache2
